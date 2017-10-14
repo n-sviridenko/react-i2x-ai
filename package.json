@@ -1,11 +1,11 @@
 {
   "private": true,
-  "name": "react-app",
+  "name": "react-i2x-ai",
   "version": "0.1.0",
-  "description": "React app",
+  "description": "React i2x Challenge",
   "repository": {
     "type": "git",
-    "url": "git://github.com/n-sviridenko/react-app.git"
+    "url": "git://github.com/n-sviridenko/react-i2x-ai.git"
   },
   "engines": {
     "npm": ">=3",
