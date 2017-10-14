@@ -1,9 +1,18 @@
 {
+  "app.components.common.app_bar.header": "i2x Challenge",
+  "app.components.common.app_bar.login": "Log In",
+  "app.components.common.app_bar.logout": "Log Out",
   "app.components.locale_toggle.de": "German",
   "app.components.locale_toggle.en": "English",
   "app.components.locale_toggle.locale": "Language",
+  "app.containers.auth.login_form.email": "Email",
+  "app.containers.auth.login_form.password": "Password",
+  "app.containers.auth.login_form.submit": "Submit",
   "app.containers.common.locale_toggle_container.de": "German",
   "app.containers.common.locale_toggle_container.en": "English",
   "app.containers.common.locale_toggle_container.locale": "Language",
-  "app.pages.not_found.header": "Page not found."
+  "app.global.validation.required": "This field is required",
+  "app.pages.login.header": "Authorization",
+  "app.pages.not_found.header": "Page not found.",
+  "app.pages.recording.list.header": "Recordings"
 }

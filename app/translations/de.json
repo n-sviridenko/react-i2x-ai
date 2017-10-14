@@ -1,9 +1,18 @@
 {
+  "app.components.common.app_bar.header": "",
+  "app.components.common.app_bar.login": "",
+  "app.components.common.app_bar.logout": "",
   "app.components.locale_toggle.de": "",
   "app.components.locale_toggle.en": "",
   "app.components.locale_toggle.locale": "",
+  "app.containers.auth.login_form.email": "",
+  "app.containers.auth.login_form.password": "",
+  "app.containers.auth.login_form.submit": "",
   "app.containers.common.locale_toggle_container.de": "",
   "app.containers.common.locale_toggle_container.en": "",
   "app.containers.common.locale_toggle_container.locale": "",
-  "app.pages.not_found.header": ""
+  "app.global.validation.required": "",
+  "app.pages.login.header": "",
+  "app.pages.not_found.header": "",
+  "app.pages.recording.list.header": ""
 }
