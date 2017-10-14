@@ -5,6 +5,7 @@ import { call, put, select } from 'redux-saga/effects';
 
 import request from 'utils/request';
 import { merge } from 'store/actions/entities';
+import { requestFail } from 'store/actions/api';
 import { getToken } from 'store/reducers/global';
 import { apiBaseUrl, apiAuthHeaderPrefix } from 'config';
 
@@ -33,7 +34,15 @@ export default function* sendRequest(method, endpoint, data = null, responseSche
     body = JSON.stringify(data);
   }
 
-  const response = yield call(request, url, { ...options, method: finalMethod, headers, body });
+  let response;
+
+  try {
+    response = yield call(request, url, { ...options, method: finalMethod, headers, body });
+  } catch (err) {
+    yield put(requestFail(err));
+
+    throw err;
+  }
 
   if (responseSchema === null) {
     return fromJS(response);
