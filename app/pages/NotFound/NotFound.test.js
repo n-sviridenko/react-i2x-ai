@@ -12,7 +12,7 @@ describe('<NotFound />', () => {
     expect(renderedComponent.contains(
       <h1>
         <FormattedMessage
-          id="app.pages.not_found.not_found.header"
+          id="app.pages.not_found.header"
           defaultMessage={'Page not found.'}
         />
       </h1>

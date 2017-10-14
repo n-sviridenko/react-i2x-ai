@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import LocaleToggleContainer from 'containers/LocaleToggleContainer';
+import LocaleToggleContainer from 'containers/Common/LocaleToggleContainer';
 import Sidebar from './Sidebar';
 
 describe('<Sidebar />', () => {

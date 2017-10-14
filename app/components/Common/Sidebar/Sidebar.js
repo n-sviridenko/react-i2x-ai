@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LocaleToggleContainer from 'containers/LocaleToggleContainer';
+import LocaleToggleContainer from 'containers/Common/LocaleToggleContainer';
 
 function Sidebar() {
   return (

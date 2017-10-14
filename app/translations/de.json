@@ -1,3 +1,9 @@
 {
-  "app.pages.not_found.not_found.header": "Seite nicht gefunden."
+  "app.components.locale_toggle.de": "",
+  "app.components.locale_toggle.en": "",
+  "app.components.locale_toggle.locale": "",
+  "app.containers.common.locale_toggle_container.de": "",
+  "app.containers.common.locale_toggle_container.en": "",
+  "app.containers.common.locale_toggle_container.locale": "",
+  "app.pages.not_found.header": ""
 }

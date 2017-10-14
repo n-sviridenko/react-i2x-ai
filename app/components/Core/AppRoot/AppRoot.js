@@ -11,7 +11,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import muiBaseTheme from 'styles/baseTheme';
-import LanguageProvider from 'containers/LanguageProvider';
+import LanguageProvider from 'containers/Core/LanguageProvider';
 
 class AppRoot extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {

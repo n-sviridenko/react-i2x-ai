@@ -1,6 +1,9 @@
 {
-  "app.containers.locale_toggle.locale_toggle.en": "English",
-  "app.containers.locale_toggle.locale_toggle.locale": "Language",
-  "app.containers.locale_toggle.locale_toggle.de": "German",
-  "app.pages.not_found.not_found.header": "Page not found."
+  "app.components.locale_toggle.de": "German",
+  "app.components.locale_toggle.en": "English",
+  "app.components.locale_toggle.locale": "Language",
+  "app.containers.common.locale_toggle_container.de": "German",
+  "app.containers.common.locale_toggle_container.en": "English",
+  "app.containers.common.locale_toggle_container.locale": "Language",
+  "app.pages.not_found.header": "Page not found."
 }

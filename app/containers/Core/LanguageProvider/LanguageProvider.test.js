@@ -4,10 +4,9 @@ import { FormattedMessage, defineMessages } from 'react-intl';
 import { Provider } from 'react-redux';
 import { browserHistory } from 'react-router';
 
+import configureStore from 'store';
+import { translationMessages } from 'i18n';
 import ConnectedLanguageProvider, { LanguageProvider } from './LanguageProvider';
-import configureStore from './../../store';
-
-import { translationMessages } from './../../i18n';
 
 const messages = defineMessages({
   someMessage: {
