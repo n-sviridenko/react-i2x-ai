@@ -1,3 +1,3 @@
-import LoginContainer from './LoginContainer';
+import Resolver from './Resolver';
 
-export default LoginContainer;
+export default Resolver;
