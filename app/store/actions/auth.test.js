@@ -5,14 +5,15 @@ import * as actions from './auth';
 describe('auth actions', () => {
   describe('loginRequest', () => {
     it('has a type of LOGIN_REQUEST', () => {
+      const formData = Map({
+        email: 'user@test.com',
+        password: 'xxxx',
+      });
       const expected = {
         type: actions.LOGIN_REQUEST,
-        payload: Map({
-          email: 'user@test.com',
-          password: 'xxxx',
-        }),
+        payload: formData,
       };
-      expect(actions.loginRequest('user@test.com', 'xxxx')).toEqual(expected);
+      expect(actions.loginRequest(formData)).toEqual(expected);
     });
   });
 

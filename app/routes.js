@@ -20,6 +20,14 @@ function createChildRoutes(store) {
 
   return [
     {
+      path: '/login',
+      getComponent(nextState, cb) {
+        import('pages/Login')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    },
+    {
       path: '*',
       getComponent(nextState, cb) {
         import('pages/NotFound')

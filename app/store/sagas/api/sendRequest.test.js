@@ -17,7 +17,7 @@ describe('sendRequest', () => {
   it('should send "get" request', () => {
     const sendRequestTask = sendRequest('get', 'users', { foo: 'bar' });
     sendRequestTask.next();
-    const callEffect = call(request, 'http://api.io/users?foo=bar', { method: 'GET', headers: {} });
+    const callEffect = call(request, 'http://api.io/users/?foo=bar', { method: 'GET', headers: {} });
     expect(sendRequestTask.next(null).value).toEqual(callEffect);
   });
 
@@ -26,7 +26,7 @@ describe('sendRequest', () => {
     sendRequestTask.next();
     const callEffect = call(
       request,
-      'http://api.io/users',
+      'http://api.io/users/',
       { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{"foo":"bar"}' },
     );
     expect(sendRequestTask.next(null).value).toEqual(callEffect);
@@ -36,7 +36,7 @@ describe('sendRequest', () => {
     const formData = new FormData();
     const sendRequestTask = sendRequest('post', 'users', formData);
     sendRequestTask.next();
-    const callEffect = call(request, 'http://api.io/users', { method: 'POST', headers: {}, body: formData });
+    const callEffect = call(request, 'http://api.io/users/', { method: 'POST', headers: {}, body: formData });
     expect(sendRequestTask.next(null).value).toEqual(callEffect);
   });
 
@@ -67,7 +67,7 @@ describe('sendRequest', () => {
     const sendRequestTask = sendRequest('get', 'users', { foo: 'bar' });
     sendRequestTask.next();
     const options = { method: 'GET', headers: { authorization: 'xxxx' } };
-    const callEffect = call(request, 'http://api.io/users?foo=bar', options);
+    const callEffect = call(request, 'http://api.io/users/?foo=bar', options);
     expect(sendRequestTask.next('xxxx').value).toEqual(callEffect);
   });
 });

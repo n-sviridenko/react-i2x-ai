@@ -6,10 +6,15 @@ import * as actions from 'store/actions/auth';
 import login from './login';
 
 describe('login', () => {
+  const formData = fromJS({
+    email: 'user@site.com',
+    password: 'xxxx',
+  });
+
   let loginTask;
 
   beforeEach(() => {
-    loginTask = login(actions.loginRequest('user@site.com', 'xxxx'));
+    loginTask = login(actions.loginRequest(formData));
 
     const callDescriptor = loginTask.next().value;
     expect(callDescriptor).toMatchSnapshot();

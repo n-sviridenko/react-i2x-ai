@@ -17,7 +17,6 @@ export function isValid(token, now) {
 
   return (
     isObject(payload) &&
-    payload.userId &&
     payload.exp &&
     isAfter(payload.exp * 1000, now)
   );

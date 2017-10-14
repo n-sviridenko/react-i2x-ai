@@ -5,7 +5,7 @@ Object {
   "@@redux-saga/IO": true,
   "CALL": Object {
     "args": Array [
-      "http://api.io/users",
+      "http://api.io/users/",
       Object {
         "body": undefined,
         "headers": Object {},
@@ -23,7 +23,7 @@ Object {
   "@@redux-saga/IO": true,
   "CALL": Object {
     "args": Array [
-      "http://api.io/users/1",
+      "http://api.io/users/1/",
       Object {
         "body": undefined,
         "headers": Object {},

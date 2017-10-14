@@ -17,7 +17,7 @@ export default function* sendRequest(method, endpoint, data = null, responseSche
     headers.authorization = apiAuthHeaderPrefix ? `${apiAuthHeaderPrefix} ${token}` : token;
   }
 
-  let url = `${apiBaseUrl}/${endpoint}`;
+  let url = `${apiBaseUrl}/${endpoint}/`;
   let body;
 
   if (['GET', 'HEAD'].indexOf(finalMethod) !== -1) {
