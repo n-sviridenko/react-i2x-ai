@@ -1,0 +1,35 @@
+exports[`login should dispatch loginFailure if request was failed 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "POST",
+      "core/login",
+      Object {
+        "email": "user@site.com",
+        "password": "xxxx",
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`login should dispatch loginSuccess if request was succeeded 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "POST",
+      "core/login",
+      Object {
+        "email": "user@site.com",
+        "password": "xxxx",
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;

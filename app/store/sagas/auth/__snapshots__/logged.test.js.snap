@@ -1,0 +1,49 @@
+exports[`logged should dispatch setToken if the token is valid 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`logged should dispatch setToken if the token is valid 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "yyyy",
+      2011-02-10T23:45:15.000Z,
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`logged should not dispatch setToken if the token is invalid 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`logged should not dispatch setToken if the token is invalid 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "yyyy",
+      2011-02-10T23:45:15.000Z,
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
