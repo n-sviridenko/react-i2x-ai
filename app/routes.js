@@ -28,6 +28,14 @@ function createChildRoutes(store) {
       },
     },
     {
+      path: '/recordings',
+      getComponent(nextState, cb) {
+        import('pages/Recording/List')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    },
+    {
       path: '*',
       getComponent(nextState, cb) {
         import('pages/NotFound')
@@ -41,7 +49,11 @@ function createChildRoutes(store) {
 // Set up the router, wrapping all Routes in the App component
 export default function createRootRoute(store) {
   return {
+    path: '/',
     component: App,
+    indexRoute: {
+      onEnter: (nextState, replace) => replace('/recordings'),
+    },
     childRoutes: createChildRoutes(store),
   };
 }

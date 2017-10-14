@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`list should dispatch the listFail if request was failed 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "get",
+      "ai/recording/list",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`list should dispatch the listSuccess if request was succeeded 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "get",
+      "ai/recording/list",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;

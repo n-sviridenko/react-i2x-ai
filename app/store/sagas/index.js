@@ -3,10 +3,12 @@ import { createAction } from 'redux-actions';
 
 import auth from './auth';
 import forms from './forms';
+import recording from './recording';
 
 const sagas = [
   ...auth,
   ...forms,
+  ...recording,
 ];
 
 const HMR_CANCEL = 'app/sagas/HMR_CANCEL';
