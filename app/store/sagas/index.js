@@ -2,9 +2,11 @@ import { fork, take, cancel } from 'redux-saga/effects';
 import { createAction } from 'redux-actions';
 
 import auth from './auth';
+import forms from './forms';
 
 const sagas = [
   ...auth,
+  ...forms,
 ];
 
 const HMR_CANCEL = 'app/sagas/HMR_CANCEL';
