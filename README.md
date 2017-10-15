@@ -27,6 +27,18 @@ or using:<br />
 3. Launch the client:<br />
 `$ yarn start`
 
+Deploying to Heroku
+-------------------
+
+1. Create an app:<br />
+`$ heroku create <you app name>`
+
+2. Allow Heroku to compile `devDependencies`:<br />
+`$ heroku config:set NPM_CONFIG_PRODUCTION=false`
+
+3. Push the repository:<br />
+`$ git push heroku master`
+
 More documentation
 ------------------
 
